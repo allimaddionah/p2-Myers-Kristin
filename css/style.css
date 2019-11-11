@@ -1,0 +1,364 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;}
+body {
+	    font-family: sans-serif;
+		    background: white;
+}
+header, nav, aside, article, footer, section, main, figure, figcaption {
+
+  display: block;
+}
+
+.topnav {
+    width: 100%;
+    margin: auto;
+    padding: 1.2rem 0;
+     background:  #00a2ff;
+    overflow: hidden;
+}
+
+.topnav a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+	padding: 0.6rem 1.7rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.topnav a:hover {
+         background-color: #1dacff;
+    color: white;
+}
+
+.topnav a.active {
+        background-color: #4abdff;
+  color: white;
+}
+
+header {
+    background-color: white;
+       padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+.homegallary section {
+	width: 25%;
+  }
+
+figure {
+    width: 100%;
+  }
+figure img {
+        max-width: 96%;
+  }
+
+
+.container {
+    text-align: center;
+    padding: 5rem 0px 2rem 0px;
+	    background-color: #ffffff;
+}
+.container h1 {
+    padding-bottom: 0.5rem;
+    color: #198ed1;
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-family: 'Permanent Marker', cursive;
+
+}
+.logo {
+	  margin: 0.8em;
+}
+
+.container h2 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 2.0rem;
+    letter-spacing: 2px;
+    font-family: 'Permanent Marker', cursive;
+}
+p {
+    line-height: 27px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'ABeeZee', sans-serif;
+    color: #000000;
+}
+
+footer {
+       background-color: #00a2ff;
+    padding: 3rem;
+    text-align: center;
+}
+
+.content-page {
+    padding: 0 0 5rem 0;
+    margin: auto;
+    width: 75%;
+    overflow: auto;
+	}
+.content-page img {
+    max-width: 350px;
+}
+
+#myLinks{
+ display:unset;
+}
+.icon, .navi {
+	display:none;
+}
+
+.popup_content {
+ text-align:left;
+}
+
+.popup_content p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.popup_content h1 {
+	font-size: 2rem;
+}
+.imgslide {
+	width: 32.5%;
+    display: inline-flex;
+}
+.imgslide img {
+	    width: 100%;
+}
+
+/* start accordion code */
+
+#accordion {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+@media(min-width: 768px)  {
+    #accordion {
+      width: 80%;
+    }
+}
+
+.accordion-headers {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #970102;
+  margin: 10px auto;
+  color: white;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.toggle-indicator {
+  font-size: 40px;
+}
+
+.accordion-description {
+  height: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  transition: height 1s;
+}
+
+.accordion-open {
+  height: 200px;
+  padding: 5px 2px;
+  transition: height 1s;
+  font-size: 16px;
+}
+
+/* end accordion code */
+
+
+/* start names code **********************************************************************/
+
+.content-page {
+
+    margin: auto;
+    width: 70%;
+    overflow: inherit;
+	}
+
+.content-box {
+	width:33.33%;
+	float:left;
+}
+
+p {
+
+  text-align: left;
+  color: #000000;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+#Box1, #Box2, #Box3, #Box4, #Box5, #Box6, #Box7, #Box8 {
+  background-color: #fff;
+  width: 350px;
+  margin: 10px;
+    border: 15px solid #fff;
+}
+#Placeholder1, #Placeholder2, #Placeholder3, #Placeholder4, #Placeholder5, #Placeholder6, #Placeholder7, #Placeholder8 {
+  font-size: 1.8rem;
+  color: #444;
+  padding-top: 20px;
+}
+
+
+.selectedcolor {
+  background-color: #0A8BA1 !important;
+}
+
+
+
+
+/* end nanes code ************************************************************************************/
+
+
+
+/* 650px Media query starts****************************/
+  @media (max-width: 650px){
+
+
+  .box figure a img {
+    width: 100%;
+  }
+
+  .popup-content {
+    width: 18rem !important;
+	}
+
+	  .homegallary section {
+		width: 100%;
+	}
+}
+
+/* 650px Media query ends****************************/
+
+@media screen and (min-width:900px) and (max-width:1700px) {
+	#myLinks{
+	 display:unset;
+	}
+}
+@media screen and (max-width:1100px) {
+.topnav {
+  overflow: hidden;
+background-color: #1eb4fa;
+  position: relative;
+      padding: 0px;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+.topnav a.icon {
+  background: #02628f;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.homegallary section {
+		width: 33%;
+	}
+
+}
+
+
+@media screen and (max-width:900px) {
+  .homegallary section {
+  		width: 50%;
+  	}
+
+    .accordion-open {
+      height: 400px;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+  .homegallary section {
+  		width: 100%;
+  	}
+
+}
+/* ***********************************End Hamburger Menu*********************************** */
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.closeout {
+	background: #1aa4fe;
+    cursor: pointer;
+    padding: 1em;
+    color: white;
+    font-size: 1em;
+}
